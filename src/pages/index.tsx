@@ -43,7 +43,7 @@ export default function home() {
                 <>
                   <p>Selected file: {file.name}</p>
                   <button
-                    onClick={uploadedFile}
+                    onClick={uploadFile}
                     className="bg-purple-500 text-white p-2 rounded-sm shadow-md hover:bg-purple-700 transition-all"
                   >
                     Uploaded a File! :D 
@@ -52,6 +52,8 @@ export default function home() {
               )}
               {uploadingStatus && <p>{uploadingStatus}</p>}
               {uploadedFile && <img src={uploadedFile} />}
+
+              <img src={uploadedFile} />
           </main>
       </div>
   );  
