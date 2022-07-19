@@ -52,8 +52,6 @@ export default function home() {
               )}
               {uploadingStatus && <p>{uploadingStatus}</p>}
               {uploadedFile && <img src={uploadedFile} />}
-
-              <img src={uploadedFile} />
           </main>
       </div>
   );  
