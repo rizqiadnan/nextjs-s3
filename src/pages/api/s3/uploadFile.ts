@@ -31,3 +31,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         res.status(400).json({ message:err });
     }
 };
+
+export const config = {
+    api: {
+        bodyParser: {
+            sizeLimit: "8mb", // Limit
+        },
+    },
+};
