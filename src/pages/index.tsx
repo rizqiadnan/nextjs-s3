@@ -15,7 +15,7 @@ export default function home() {
   const uploadFile = async () => {
     setUploadingStatus("Uploading the file to AWS S3");
 
-    let { data} = await axios.post("/api/s3/uploadFile", {
+    let { data } = await axios.post("/api/s3/uploadFile", {
       name: file.name,
       type: file.type,
     });
