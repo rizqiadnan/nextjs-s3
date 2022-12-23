@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const BUCKET_URL = "https://rizqiadnan-nextjs-s3.s3.ap-southeast-1.amazonaws.com/"
+const BUCKET_URL = process.env.BUCKET_URL
 
 export default function home() {
   const [file, setFile] = useState<any>();
